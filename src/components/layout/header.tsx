@@ -16,7 +16,7 @@ export default function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
   
   const NavLink = ({ href, label, isMobile = false }: { href: string; label: string; isMobile?: boolean }) => (
-    <Link href={href} passHref>
+    <Link href={href}>
       <Button
         variant="link"
         className={`font-light uppercase tracking-widest text-foreground hover:text-foreground/70 hover:no-underline ${isMobile ? 'text-lg py-4 w-full justify-start' : 'text-sm'}`}
@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" passHref>
+        <Link href="/">
           <span className="text-xl font-light uppercase tracking-widest cursor-pointer">
             Camila Tessio
           </span>
@@ -50,19 +50,17 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[80vw] sm:w-[300px] bg-background p-0">
+            <SheetContent side="right" className="w-[85vw] max-w-[300px] bg-background p-0">
                 <div className="flex flex-col h-full">
-                    <SheetHeader className="p-6 flex flex-row justify-between items-center">
-                      <SheetTitle className="sr-only">Menu</SheetTitle>
-                       <SheetClose asChild>
-                            <Button variant="ghost" size="icon">
-                                <X className="h-6 w-6" />
-                                <span className="sr-only">Close menu</span>
-                            </Button>
-                        </SheetClose>
+                    <SheetHeader className="p-4 flex flex-row items-center justify-between">
+                      <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                     </SheetHeader>
-                    <div className="flex flex-col items-start px-6 space-y-2">
-                        {navLinks.map((link) => <NavLink key={link.href} {...link} isMobile />)}
+                    <div className="flex flex-col items-start p-4 space-y-2">
+                        {navLinks.map((link) => (
+                           <SheetClose asChild key={link.href}>
+                             <NavLink {...link} isMobile />
+                           </SheetClose>
+                        ))}
                     </div>
                 </div>
             </SheetContent>
