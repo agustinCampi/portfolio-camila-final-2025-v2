@@ -3,10 +3,10 @@ const measurements = [
   { label: 'Bust / Busto', value: '80 cm' },
   { label: 'Waist / Cintura', value: '61 cm' },
   { label: 'Hips / Cadera', value: '89 cm' },
-  { label: 'Eyes / Ojos', value: 'Marrones' },
-  { label: 'Hair / Pelo', value: 'Castaño Claro' },
-  { label: 'Shoe / Calzado', value: '37' },
-  { label: 'Bottom & Top / Talle', value: '36 - Small' },
+  { label: 'Eyes / Ojos', value: 'Marrones / Brown' },
+  { label: 'Hair / Pelo', value: 'Castaño Claro / Light Brown' },
+  { label: 'Shoe / Calzado', value: '37 / 6.5 US' },
+  { label: 'Bottom & Top / Talle', value: '36 - Small / 36 - Small' },
 ];
 
 export default function About() {
