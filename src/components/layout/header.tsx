@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { useState } from 'react';
 
 const navLinks = [
@@ -52,14 +52,15 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[80vw] sm:w-[300px] bg-background p-0">
                 <div className="flex flex-col h-full">
-                    <div className="p-6 flex justify-end">
-                        <SheetClose asChild>
+                    <SheetHeader className="p-6 flex flex-row justify-between items-center">
+                      <SheetTitle className="sr-only">Menu</SheetTitle>
+                       <SheetClose asChild>
                             <Button variant="ghost" size="icon">
                                 <X className="h-6 w-6" />
                                 <span className="sr-only">Close menu</span>
                             </Button>
                         </SheetClose>
-                    </div>
+                    </SheetHeader>
                     <div className="flex flex-col items-start px-6 space-y-2">
                         {navLinks.map((link) => <NavLink key={link.href} {...link} isMobile />)}
                     </div>
