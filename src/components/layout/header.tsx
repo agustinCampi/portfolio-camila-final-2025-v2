@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/">
+        <Link href="/#home">
           <span className="text-xl font-light uppercase tracking-widest cursor-pointer">
             Camila Tessio
           </span>
