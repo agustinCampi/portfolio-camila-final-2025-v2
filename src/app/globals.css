@@ -15,9 +15,9 @@
     --popover-foreground: 0 0% 0%;
     --primary: 0 0% 0%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 97.6%;
+    --secondary: 0 0% 97.6%; /* #F9F9F9 */
     --secondary-foreground: 0 0% 0%;
-    --muted: 0 0% 92.9%;
+    --muted: 0 0% 92.9%; /* #EDEDED */
     --muted-foreground: 0 0% 50.2%;
     --accent: 0 0% 96.1%;
     --accent-foreground: 0 0% 0%;

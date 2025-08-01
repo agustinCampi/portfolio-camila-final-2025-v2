@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/#home">
+        <Link href="#home">
           <span className="text-xl font-light uppercase tracking-widest cursor-pointer">
             Camila Tessio
           </span>
@@ -50,10 +50,15 @@ export default function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[85vw] max-w-[300px] bg-background p-0">
+            <SheetContent side="right" className="w-[280px] bg-background p-0">
                 <div className="flex flex-col h-full">
-                    <SheetHeader className="p-4 flex flex-row items-center justify-between">
-                      <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                    <SheetHeader className="p-4 flex flex-row items-center justify-between border-b">
+                      <SheetTitle className="font-medium uppercase tracking-widest text-base">Menu</SheetTitle>
+                       <SheetClose asChild>
+                          <Button variant="ghost" size="icon">
+                            <X className="h-6 w-6" />
+                          </Button>
+                       </SheetClose>
                     </SheetHeader>
                     <div className="flex flex-col items-start p-4 space-y-2">
                         {navLinks.map((link) => (

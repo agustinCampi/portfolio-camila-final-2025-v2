@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" />
       <div className="relative z-20 flex flex-col items-center">
         <h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-light uppercase text-shadow-sm tracking-widest"
+          className="text-5xl md:text-7xl lg:text-8xl font-light uppercase tracking-wider md:tracking-widest"
         >
           Capturando la Esencia.
         </h1>

@@ -27,7 +27,7 @@ export default function Contact() {
         <h2 className="text-4xl md:text-5xl font-light uppercase tracking-widest mb-6">
           Contacto
         </h2>
-        <p className="max-w-2xl mx-auto text-base text-foreground/80 mb-12 font-light">
+        <p className="max-w-2xl mx-auto text-base text-foreground/80 mb-12 font-normal">
           Para consultas profesionales, colaboraciones y contrataciones, no dudes en ponerte en contacto.
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
