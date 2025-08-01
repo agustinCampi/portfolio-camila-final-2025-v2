@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white">
+    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4">
       <Image
         src="https://placehold.co/1200x800.png"
         alt="Camila Tessio posing for a photoshoot"
@@ -18,8 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" />
       <div className="relative z-20 flex flex-col items-center">
         <h1 
-          className="text-5xl md:text-7xl lg:text-8xl font-light uppercase text-shadow-sm"
-          style={{ letterSpacing: '0.2em' }}
+          className="text-5xl md:text-7xl lg:text-8xl font-light uppercase text-shadow-sm tracking-widest"
         >
           Capturando la Esencia.
         </h1>
