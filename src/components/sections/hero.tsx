@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4 bg-black">
+    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4">
       <Image
-        src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/american%20mix%2FIMG_5458.webp?alt=media&token=86ca0684-1aa2-4252-9fbf-6ce33bd5bc2e"
+        src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/be%20ganesha%2FIMG_2355.webp?alt=media&token=123ced74-e326-4552-af47-3b36aaa2c8b6"
         alt="Camila Tessio posing for a photoshoot"
         layout="fill"
-        objectFit="contain"
+        objectFit="cover"
         objectPosition="center"
         className="z-0"
         priority
