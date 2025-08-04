@@ -1,9 +1,9 @@
 "use client";
 
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { useState } from 'react';
 
 const navLinks = [
@@ -14,7 +14,7 @@ const navLinks = [
 
 export default function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  
+
   const NavLink = ({ href, label, isMobile = false }: { href: string; label: string; isMobile?: boolean }) => (
     <Link href={href}>
       <Button
@@ -26,7 +26,7 @@ export default function Header() {
       </Button>
     </Link>
   );
-  
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -51,23 +51,16 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-background p-0">
-                <div className="flex flex-col h-full">
-                    <SheetHeader className="p-4 flex flex-row items-center justify-between border-b">
-                      <SheetTitle className="font-medium uppercase tracking-widest text-base">Menu</SheetTitle>
-                       <SheetClose asChild>
-                          <Button variant="ghost" size="icon">
-                            <X className="h-6 w-6" />
-                          </Button>
-                       </SheetClose>
-                    </SheetHeader>
-                    <div className="flex flex-col items-start p-4 space-y-2">
-                        {navLinks.map((link) => (
-                           <SheetClose asChild key={link.href}>
-                             <NavLink {...link} isMobile />
-                           </SheetClose>
-                        ))}
-                    </div>
-                </div>
+              <SheetHeader className="p-4 flex flex-row items-center justify-between border-b">
+                <SheetTitle className="font-medium uppercase tracking-widest text-base visually-hidden">Menu</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col items-start p-4 space-y-2">
+                {navLinks.map((link) => (
+                  <SheetClose asChild key={link.href}>
+                    <NavLink {...link} isMobile />
+                  </SheetClose>
+                ))}
+              </div>
             </SheetContent>
           </Sheet>
         </div>
