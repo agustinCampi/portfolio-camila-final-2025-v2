@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4">
+    <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4 bg-black">
       <Image
-        src="https://placehold.co/1200x800.png"
+        src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/american%20mix%2FIMG_5458.webp?alt=media&token=86ca0684-1aa2-4252-9fbf-6ce33bd5bc2e"
         alt="Camila Tessio posing for a photoshoot"
         layout="fill"
-        objectFit="cover"
+        objectFit="contain"
         objectPosition="center"
         className="z-0"
         priority
@@ -20,7 +20,7 @@ export default function Hero() {
         <h1 
           className="text-5xl md:text-7xl lg:text-8xl font-light uppercase tracking-wider md:tracking-widest"
         >
-          Capturando la Esencia.
+          Camila Tessio
         </h1>
         <Link href="#portfolio" passHref>
           <Button
