@@ -90,7 +90,7 @@ const CampaignSeparator = () => (
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="container mx-auto px-6 py-16 md:py-24">
+    <section id="portfolio" className="container mx-auto px-6 py-16 md:py-24 pt-24 md:pt-24">
       <h2 className="text-4xl md:text-5xl font-light uppercase tracking-widest text-center mb-16 md:mb-24">
         Portfolio
       </h2>

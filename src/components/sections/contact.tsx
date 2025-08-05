@@ -22,7 +22,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="w-full bg-muted py-16 md:py-24">
+    <section id="contact" className="w-full bg-muted py-16 md:py-24 pt-24 md:pt-24">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-light uppercase tracking-widest mb-6">
           Contacto

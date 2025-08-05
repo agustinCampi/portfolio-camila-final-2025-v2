@@ -11,7 +11,7 @@ const measurements = [
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-secondary py-16 md:py-24">
+    <section id="about" className="w-full bg-secondary py-16 md:py-24 pt-24 md:pt-24">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-light uppercase tracking-widest text-center mb-12">
           Sobre Mí
