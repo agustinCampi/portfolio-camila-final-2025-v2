@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { motion } from 'framer-motion';
 
 const campaigns = [
   // Campaign 1
@@ -173,21 +176,27 @@ const campaigns = [
 ];
 
 const PortfolioImage = ({ src, w, h, featured = false }: { src?: string, w: number, h: number, featured?: boolean }) => (
-  <div className={featured ? "md:col-span-2 md:row-span-2" : ""}>
-    <Card className="overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border-0 rounded-md">
-      <CardContent className="p-0">
+  <motion.div
+    className={featured ? "md:col-span-2 md:row-span-2" : ""}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+  >
+    <Card className="overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border-0 rounded-md h-full">
+      <CardContent className="p-0 h-full">
         <Image
           src={src || `https://placehold.co/${w}x${h}.png`}
           alt={`Portfolio image ${w}x${h}`}
           width={w}
           height={h}
-          className="w-full h-auto object-cover"
+          className="w-full h-full object-cover"
           loading="lazy"
           data-ai-hint="fashion model portrait"
         />
       </CardContent>
     </Card>
-  </div>
+  </motion.div>
 );
 
 const CampaignSeparator = () => (
