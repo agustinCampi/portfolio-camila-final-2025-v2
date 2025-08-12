@@ -61,3 +61,7 @@ En el archivo `package.json`, encontrarás los siguientes scripts:
 -   [Genkit](https://firebase.google.com/docs/genkit) - Framework de IA de Firebase.
 -   [Shadcn/ui](https://ui.shadcn.com/) - Componentes de UI construidos con Radix UI y Tailwind CSS.
 -   [Framer Motion](https://www.framer.com/motion/) - Una librería de animación para React.
+
+## Performance y Optimización
+
+Este proyecto ha sido optimizado para ofrecer un rendimiento excepcional y una experiencia de usuario fluida. Las auditorías de Lighthouse en la versión desplegada en Vercel han arrojado una puntuación perfecta de 100 en todas las categorías (Performance, Accessibility, Best Practices, SEO).
