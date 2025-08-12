@@ -4,7 +4,7 @@ Este es un proyecto de portfolio personal creado con Next.js, Tailwind CSS y Typ
 
 ## Descripción
 
-Este repositorio contiene el código fuente del portfolio profesional de Camila. El sitio web muestra información sobre ella, sus proyectos y cómo contactarla. El sitio está optimizado para SEO y accesibilidad, e incluye archivos esenciales para el despliegue en producción como `sitemap.xml` y `robots.txt`.
+Este repositorio contiene el código fuente del portfolio profesional de Camila Tessio. El sitio web muestra información sobre ella, sus proyectos y cómo contactarla. El sitio está optimizado para SEO y accesibilidad, e incluye archivos esenciales para el despliegue en producción como `sitemap.xml` y `robots.txt`.
 
 ## Cómo empezar
 
