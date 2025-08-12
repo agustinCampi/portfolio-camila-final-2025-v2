@@ -7,10 +7,22 @@ export default function Footer() {
         <p className="text-sm font-light text-primary-foreground/60">
           © {new Date().getFullYear()} Camila Tessio. Todos los derechos reservados.
         </p>
+        <p className="text-sm font-light text-primary-foreground/60 mt-2">
+          Diseñado y desarrollado por{' '}
+          <a
+            href="https://www.instagram.com/agustincampi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary-foreground/80 transition-colors"
+          >
+            Agustín Campaña
+          </a>
+          .
+        </p>
         <div className="mt-4">
-          <Link href="/privacy-policy" className="text-xs text-primary-foreground/50 hover:text-primary-foreground/80 transition-colors">
+          <p className="text-xs text-primary-foreground/50">
             Política de Privacidad
-          </Link>
+          </p>
         </div>
       </div>
     </footer>
