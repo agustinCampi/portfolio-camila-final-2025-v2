@@ -68,4 +68,4 @@ Este proyecto ha sido optimizado para ofrecer un rendimiento excepcional y una e
 
 ## Créditos
 
-Este proyecto fue desarrollado por [Agustin Campana](https.www.instagram.com/agustincampi/).
+Este proyecto fue desarrollado por [Agustin Campaña](https.www.instagram.com/agustincampi/).
