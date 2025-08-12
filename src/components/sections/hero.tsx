@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4">
       <Image
-        src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/be%20ganesha%2FIMG_2355.webp?alt=media&token=123ced74-e326-4552-af47-3b36aaa2c8b6"
+        src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/portada%2FIMG_1440.webp?alt=media&token=2b991b0f-4ebf-4432-9616-7fa52de57dc1"
         alt="Camila Tessio posing for a photoshoot"
         layout="fill"
         objectFit="cover"
