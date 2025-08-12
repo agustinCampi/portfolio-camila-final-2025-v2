@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="text-sm font-light text-primary-foreground/60">
           © {new Date().getFullYear()} Camila Tessio. Todos los derechos reservados.
         </p>
-        <p className="text-sm font-light text-primary-foreground/60 mt-2">
+        <p className="text-xs font-light text-primary-foreground/60 mt-2">
           Diseñado y desarrollado por{' '}
           <a
             href="https://www.instagram.com/agustincampi/"
