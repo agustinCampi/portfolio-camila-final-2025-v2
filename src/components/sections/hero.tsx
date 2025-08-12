@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="relative h-[90vh] w-full flex items-center justify-center text-center text-white px-4">
       <Image
         src="https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/portada%2FIMG_1440.webp?alt=media&token=2b991b0f-4ebf-4432-9616-7fa52de57dc1"
-        alt="Camila Tessio posing for a photoshoot"
+        alt="Camila Tessio, modelo profesional, en una sesión de fotos."
         layout="fill"
         objectFit="cover"
         objectPosition="center"

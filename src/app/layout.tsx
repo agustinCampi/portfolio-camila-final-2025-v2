@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Camila Tessio Portfolio',
-  description: 'Professional model portfolio for Camila Tessio.',
+  title: 'Camila Tessio | Modelo Profesional',
+  description: 'Portfolio profesional de la modelo Camila Tessio. Descubre sus trabajos, campañas y colaboraciones en la industria de la moda.',
 };
 
 export default function RootLayout({
