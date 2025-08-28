@@ -89,7 +89,7 @@ const campaigns = [
     { src: "https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/vitabella%2FIMG_1245.webp?alt=media&token=1aa3df03-aad1-402f-a183-12d71b76f07d", w: 400, h: 600, alt: "Look de la campaña Vitabella modelado por Camila Tessio" },
     { src: "https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/vitabella%2FIMG_1248.webp?alt=media&token=2b858c11-434c-400f-a344-fd269537a29d", w: 400, h: 600, alt: "Camila Tessio en sesión de fotos para Vitabella" },
     { src: "https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/vitabella%2FIMG_1252.webp?alt=media&token=7161a6ab-0e63-41db-b0cc-0fc2f82ebbe9", w: 400, h: 600, alt: "Primer plano de Camila Tessio para Vitabella" },
-        
+    { src: "https://firebasestorage.googleapis.com/v0/b/camila-tessio-portfolio-2nzf8.firebasestorage.app/o/vitabella%2FIMG_1257.webp?alt=media&token=6bbef8d8-e15c-47c0-a4f1-c7b7764952a4", w: 400, h: 600, alt: "Camila Tessio posando para Vitabella" }
   ],
   // Campaign 10: ANM
   [
